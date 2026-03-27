@@ -94,28 +94,28 @@ document.querySelector("#app").innerHTML = `
       <div class="tips-grid">
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <img src="/icons/hospedagem.svg" alt="Icone de hospedagem" loading="lazy" />
+            <p class="tip-placeholder">*incluir desenhos XVG*</p>
           </div>
           <h3 class="tip-title">Hospedagem</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <img src="/icons/o-que-fazer.svg" alt="Icone de o que fazer" loading="lazy" />
+            <p class="tip-placeholder">*incluir desenhos XVG*</p>
           </div>
           <h3 class="tip-title">O que fazer</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <img src="/icons/cabeleireiro-maquiador.svg" alt="Icone de cabeleireiro e maquiador" loading="lazy" />
+            <p class="tip-placeholder">*incluir desenhos XVG*</p>
           </div>
           <h3 class="tip-title">Cabeleireiro e Maquiador</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <img src="/icons/bares-restaurantes.svg" alt="Icone de bares e restaurantes" loading="lazy" />
+            <p class="tip-placeholder">*incluir desenhos XVG*</p>
           </div>
           <h3 class="tip-title">Bares e Restaurantes</h3>
         </article>

@@ -289,6 +289,10 @@ h2 {
   margin: 0 auto 0.9rem;
   color: #4d4a44;
   opacity: 0.95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
 }
 
 .tip-icon svg {
@@ -303,6 +307,15 @@ h2 {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.tip-placeholder {
+  margin: 0;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #3f3b34;
+  text-align: center;
 }
 
 .tip-title {
