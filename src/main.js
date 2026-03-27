@@ -90,6 +90,7 @@ document.querySelector("#app").innerHTML = `
     <section class="section" id="dicas">
       <p class="section-eyebrow">Dicas</p>
       <h2>Para aproveitar melhor a viagem</h2>
+      <p class="tips-subtitle">Separamos algumas opções de hotéis e restaurantes que recomendamos na cidade. Para reservar sua hospedagem, utilize nosso cupom de desconto MARINAEBRENO20 para aproveitar os benefícios! (Pode ser utilizado em qualquer um dos 3 hotéis indicados, basta inserir na página final, na área de pagamento):</p>
       <div class="tips-grid">
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
