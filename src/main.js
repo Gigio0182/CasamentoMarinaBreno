@@ -94,28 +94,28 @@ document.querySelector("#app").innerHTML = `
       <div class="tips-grid">
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos XVG*</p>
+            <p class="tip-placeholder">*incluir desenhos SVG*</p>
           </div>
           <h3 class="tip-title">Hospedagem</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos XVG*</p>
+            <p class="tip-placeholder">*incluir desenhos SVG*</p>
           </div>
           <h3 class="tip-title">O que fazer</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos XVG*</p>
+            <p class="tip-placeholder">*incluir desenhos SVG*</p>
           </div>
           <h3 class="tip-title">Cabeleireiro e Maquiador</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos XVG*</p>
+            <p class="tip-placeholder">*incluir desenhos SVG*</p>
           </div>
           <h3 class="tip-title">Bares e Restaurantes</h3>
         </article>
