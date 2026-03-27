@@ -96,7 +96,32 @@ document.querySelector("#app").innerHTML = `
           <div class="tip-icon" aria-hidden="true">
             <p class="tip-placeholder">*incluir desenhos SVG*</p>
           </div>
-          <h3 class="tip-title">Hospedagem</h3>
+          <button class="tip-title tip-button" id="hospedagem-toggle" type="button" aria-expanded="false" aria-controls="hospedagem-details">
+            Hospedagem
+          </button>
+          <div class="hotel-list" id="hospedagem-details" hidden>
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.hcchospitality.com.br/qoya-hotel-curitiba" target="_blank" rel="noreferrer">Qoya Hotel Curitiba</a>
+              <p>Av. Sete de Setembro, 4211 - Batel</p>
+              <a class="hotel-link" href="https://www.hcchospitality.com.br/qoya-hotel-curitiba" target="_blank" rel="noreferrer">https://www.hcchospitality.com.br/qoya-hotel-curitiba</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.hcchospitality.com.br/radisson-hotel-curitiba" target="_blank" rel="noreferrer">Radisson Hotel Curitiba</a>
+              <p>Av. Sete de Setembro, 5190 - Batel</p>
+              <a class="hotel-link" href="https://www.hcchospitality.com.br/radisson-hotel-curitiba" target="_blank" rel="noreferrer">https://www.hcchospitality.com.br/radisson-hotel-curitiba</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.hcchospitality.com.br/hotel-bleev-curitiba" target="_blank" rel="noreferrer">Bleev Hotel Curitiba</a>
+              <p>Rua Des. Motta, 1221 - Água Verde</p>
+              <a class="hotel-link" href="https://www.hcchospitality.com.br/hotel-bleev-curitiba" target="_blank" rel="noreferrer">https://www.hcchospitality.com.br/hotel-bleev-curitiba</a>
+            </article>
+          </div>
         </article>
 
         <article class="tip-card">
@@ -162,6 +187,8 @@ document.querySelector("#app").innerHTML = `
 const countdownGrid = document.getElementById("countdown-grid");
 const form = document.getElementById("rsvp-form");
 const formOk = document.getElementById("form-ok");
+const hospedagemToggle = document.getElementById("hospedagem-toggle");
+const hospedagemDetails = document.getElementById("hospedagem-details");
 
 function renderCountdown() {
   const now = Date.now();
@@ -184,3 +211,11 @@ form.addEventListener("submit", (event) => {
   formOk.hidden = false;
   form.reset();
 });
+
+if (hospedagemToggle && hospedagemDetails) {
+  hospedagemToggle.addEventListener("click", () => {
+    const isExpanded = hospedagemToggle.getAttribute("aria-expanded") === "true";
+    hospedagemToggle.setAttribute("aria-expanded", String(!isExpanded));
+    hospedagemDetails.hidden = isExpanded;
+  });
+}

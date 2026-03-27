@@ -326,20 +326,64 @@ h2 {
   text-align: center;
   font-size: clamp(1.25rem, 2.7vw, 2rem);
   letter-spacing: 0.04em;
-  background: linear-gradient(180deg, #fffdf8 0%, #f5eee2 100%);
-  box-shadow:
-    0 5px 0 rgba(47, 42, 38, 0.34),
-    0 12px 20px rgba(0, 0, 0, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.85);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  background: var(--bg);
+  color: var(--text);
+  box-shadow: none;
+  transition: background-color 180ms ease, color 180ms ease;
 }
 
-.tip-card:hover .tip-title {
-  transform: translateY(-1px);
-  box-shadow:
-    0 7px 0 rgba(47, 42, 38, 0.34),
-    0 14px 22px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+.tip-button {
+  width: 100%;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tip-button:hover {
+  background: #41522e;
+}
+
+.hotel-list {
+  margin-top: 1.1rem;
+  padding: 0.2rem 0.2rem 0.4rem;
+  text-align: center;
+}
+
+.hotel-item {
+  max-width: 540px;
+  margin: 0.6rem auto;
+}
+
+.hotel-name {
+  display: inline-block;
+  color: #2f2a26;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.2px;
+}
+
+.hotel-item p {
+  margin: 0.45rem 0 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  color: #3f3b34;
+}
+
+.hotel-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: #3f3b34;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-word;
+}
+
+.hotel-divider {
+  width: min(56%, 220px);
+  height: 2px;
+  margin: 1.35rem auto;
+  background: #b8904f;
 }
 
 .countdown-grid {
