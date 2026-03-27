@@ -32,10 +32,8 @@ document.querySelector("#app").innerHTML = `
       <a href="#presentes">Presentes</a>
     </nav>
     <div class="hero-content">
-      <p class="eyebrow">Marina & Breno</p>
-      <h1>M + B</h1>
+      <h1>Marina & Breno</h1>
       <p class="hero-date">12 / 10 / 2026</p>
-      <p class="subtitle">A melhor forma de compartilhar esse momento com vocês e unindo sonhos.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#rsvp">Confirmar Presença</a>
         <a class="btn btn-outline" href="#evento">Ver Local</a>
@@ -47,6 +45,10 @@ document.querySelector("#app").innerHTML = `
     <section class="countdown section" aria-label="Contagem regressiva">
       <p class="section-eyebrow">Contagem regressiva para o grande dia</p>
       <div id="countdown-grid" class="countdown-grid"></div>
+      <div class="countdown-copy">
+        <p>Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.</p>
+        <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas nos enche de alegria em tê-los ao nosso lado. Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e corpos para sempre, o dia do nosso casamento.</p>
+      </div>
     </section>
 
     <section class="section welcome" id="historia">
