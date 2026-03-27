@@ -1,10 +1,10 @@
 :root {
-  --bg: #4f6438;
-  --surface: #fffaf2;
-  --text: #efe8d8;
-  --primary: #dce6ce;
-  --accent: #bb6f55;
-  --line: #d7cbb7;
+  --bg: #f1ebdf;
+  --surface: #fbf5eb;
+  --text: #4a4238;
+  --primary: #8a7a64;
+  --accent: #b58249;
+  --line: #d9ccba;
   --deep: #2a241f;
 }
 
@@ -37,29 +37,29 @@ body::after {
 body::before {
   z-index: -3;
   background:
-    radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.06) 0, transparent 44%),
-    radial-gradient(circle at 88% 10%, rgba(255, 255, 255, 0.05) 0, transparent 36%),
+    radial-gradient(circle at 12% 20%, rgba(160, 134, 95, 0.08) 0, transparent 44%),
+    radial-gradient(circle at 88% 10%, rgba(160, 134, 95, 0.06) 0, transparent 36%),
     repeating-radial-gradient(
       circle at 25% 30%,
-      rgba(24, 30, 18, 0.12) 0 0.8px,
+      rgba(64, 52, 37, 0.032) 0 0.8px,
       transparent 0.8px 3.8px
     ),
     repeating-radial-gradient(
       circle at 70% 65%,
-      rgba(24, 30, 18, 0.09) 0 0.7px,
+      rgba(64, 52, 37, 0.024) 0 0.7px,
       transparent 0.7px 3.4px
     ),
     repeating-linear-gradient(
       25deg,
-      rgba(17, 22, 12, 0.1) 0 1px,
+      rgba(70, 57, 40, 0.025) 0 1px,
       transparent 1px 3px
     ),
     repeating-linear-gradient(
       -30deg,
-      rgba(17, 22, 12, 0.08) 0 1px,
+      rgba(70, 57, 40, 0.02) 0 1px,
       transparent 1px 5px
     ),
-    linear-gradient(180deg, #536a3c 0%, #4a5f34 100%);
+    linear-gradient(180deg, #f5efe5 0%, #eee6d9 100%);
   background-size: auto, auto, 220px 220px, 180px 180px, auto, auto, auto;
   opacity: 0.95;
 }
@@ -67,12 +67,12 @@ body::before {
 body::after {
   z-index: -2;
   background:
-    radial-gradient(circle at center, transparent 54%, rgba(7, 11, 5, 0.36) 100%),
-    radial-gradient(circle at 15% 78%, rgba(255, 255, 255, 0.08) 0, transparent 32%),
-    radial-gradient(circle at 90% 88%, rgba(255, 255, 255, 0.07) 0, transparent 28%),
+    radial-gradient(circle at center, transparent 54%, rgba(72, 58, 39, 0.08) 100%),
+    radial-gradient(circle at 15% 78%, rgba(255, 255, 255, 0.44) 0, transparent 32%),
+    radial-gradient(circle at 90% 88%, rgba(187, 160, 122, 0.1) 0, transparent 28%),
     repeating-linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.07) 0 1px,
+      rgba(88, 72, 50, 0.016) 0 1px,
       transparent 1px 2px
     );
   opacity: 0.88;
@@ -83,9 +83,9 @@ body::after {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(115deg, transparent 0 45%, rgba(0, 0, 0, 0.12) 100%),
-    radial-gradient(circle at 30% 85%, rgba(255, 255, 255, 0.05) 0, transparent 30%),
-    radial-gradient(circle at 60% 30%, rgba(255, 255, 255, 0.06) 0, transparent 30%);
+    linear-gradient(115deg, transparent 0 45%, rgba(147, 117, 78, 0.07) 100%),
+    radial-gradient(circle at 30% 85%, rgba(255, 255, 255, 0.3) 0, transparent 30%),
+    radial-gradient(circle at 60% 30%, rgba(255, 255, 255, 0.22) 0, transparent 30%);
   z-index: -1;
 }
 
@@ -201,13 +201,13 @@ h2 {
 }
 
 .btn-primary {
-  background: #dfe8d1;
-  color: #2f3e25;
+  background: #8a7a64;
+  color: #fff;
 }
 
 .btn-outline {
-  border-color: #dfe8d1;
-  color: #dfe8d1;
+  border-color: #8a7a64;
+  color: #6d5f4e;
   background: transparent;
 }
 
@@ -276,11 +276,11 @@ h2 {
 }
 
 .tip-card {
-  background: transparent;
-  border: none;
+  background: rgba(251, 245, 235, 0.64);
+  border: 1px solid var(--line);
   border-radius: 16px;
   padding: 1.4rem 1.1rem 1.2rem;
-  color: var(--text);
+  color: #3f3b34;
 }
 
 .tip-icon {
@@ -326,8 +326,8 @@ h2 {
   text-align: center;
   font-size: clamp(1.25rem, 2.7vw, 2rem);
   letter-spacing: 0.04em;
-  background: var(--bg);
-  color: var(--text);
+  background: #f4ede1;
+  color: #4a4238;
   box-shadow: none;
   transition: background-color 180ms ease, color 180ms ease;
 }
@@ -339,7 +339,7 @@ h2 {
 }
 
 .tip-button:hover {
-  background: #41522e;
+  background: #e8dcc9;
 }
 
 .hotel-list {
@@ -395,8 +395,8 @@ h2 {
 }
 
 .countdown-grid div {
-  background: rgba(255, 250, 242, 0.92);
-  border: 1px solid rgba(215, 203, 183, 0.9);
+  background: rgba(251, 245, 235, 0.95);
+  border: 1px solid var(--line);
   border-radius: 20px;
   text-align: center;
   padding: 1.2rem 0.6rem;
