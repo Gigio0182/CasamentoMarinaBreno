@@ -44,21 +44,6 @@ document.querySelector("#app").innerHTML = `
         <h2>Estamos vivendo o capítulo mais especial da nossa história.</h2>
         <p>Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.</p>
         <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas nos enche de alegria em tê-los ao nosso lado. Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e corpos para sempre, <strong>o dia do nosso casamento</strong>.</p>
-
-        <div class="cards mini-story-grid">
-          <article class="card">
-            <h3>O começo</h3>
-            <p>Tudo começou de um jeito simples, mas com uma conexão que parecia destino.</p>
-          </article>
-          <article class="card">
-            <h3>O pedido</h3>
-            <p>Entre risos, planos e muito amor, chegou o dia do sim mais importante da nossa história.</p>
-          </article>
-          <article class="card">
-            <h3>O grande dia</h3>
-            <p>Agora queremos celebrar esse novo capítulo com quem sempre fez parte da nossa caminhada.</p>
-          </article>
-        </div>
       </div>
     </div>
   </header>
