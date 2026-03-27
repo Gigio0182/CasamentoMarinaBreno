@@ -300,6 +300,7 @@ h2 {
   gap: 1.4rem;
   max-width: 920px;
   margin: 1.8rem auto 0;
+  align-items: start;
 }
 
 .tips-subtitle {
