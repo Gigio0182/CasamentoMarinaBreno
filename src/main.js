@@ -45,20 +45,13 @@ document.querySelector("#app").innerHTML = `
     <section class="countdown section" aria-label="Contagem regressiva">
       <p class="section-eyebrow">Contagem regressiva para o grande dia</p>
       <div id="countdown-grid" class="countdown-grid"></div>
-      <div class="countdown-copy">
-        <p>Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.</p>
-        <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas nos enche de alegria em tê-los ao nosso lado. Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e corpos para sempre, o dia do nosso casamento.</p>
-      </div>
     </section>
 
     <section class="section welcome" id="historia">
       <p class="section-eyebrow">Sejam bem-vindos ao nosso site</p>
       <h2>Estamos vivendo o capítulo mais especial da nossa história.</h2>
-      <p>
-        Aqui vamos contar a vocês, queridos amigos e familiares, os momentos mais marcantes da
-        nossa caminhada. A contagem regressiva começou, o frio na barriga já apareceu e toda a
-        alegria desse grande sonho se multiplica por saber que vocês estarão conosco.
-      </p>
+      <p>Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.</p>
+      <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas nos enche de alegria em tê-los ao nosso lado. Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e corpos para sempre, <strong>o dia do nosso casamento</strong>.</p>
     </section>
 
     <section class="section story-grid">

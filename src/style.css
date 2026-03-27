@@ -296,21 +296,6 @@ h2 {
   font-size: 0.74rem;
 }
 
-.countdown-copy {
-  max-width: 760px;
-  margin: 1.6rem auto 0;
-}
-
-.countdown-copy p {
-  margin: 0;
-  line-height: 1.85;
-  font-size: 1.02rem;
-}
-
-.countdown-copy p + p {
-  margin-top: 1rem;
-}
-
 .event-note,
 .pix,
 .footer {
