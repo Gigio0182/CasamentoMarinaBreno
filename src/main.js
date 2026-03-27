@@ -140,7 +140,7 @@ document.querySelector("#app").innerHTML = `
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos SVG*</p>
+            <img src="/icons/bares-restaurantes.svg" alt="Icone de bares e restaurantes" loading="lazy" />
           </div>
           <h3 class="tip-title">Bares e Restaurantes</h3>
         </article>
