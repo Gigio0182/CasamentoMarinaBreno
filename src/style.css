@@ -351,7 +351,7 @@ h2 {
   background: rgba(255, 250, 242, 0.38);
   color: #4a4238;
   box-shadow: none;
-  transition: background-color 180ms ease, color 180ms ease;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
 .tip-button {
@@ -362,6 +362,13 @@ h2 {
 
 .tip-button:hover {
   background: rgba(255, 250, 242, 0.58);
+}
+
+.tip-card:hover .tip-title {
+  transform: translateY(-2px);
+  background: rgba(255, 250, 242, 0.7);
+  border-color: rgba(47, 42, 38, 0.85);
+  box-shadow: 0 8px 16px rgba(47, 42, 38, 0.14);
 }
 
 .hotel-list {
