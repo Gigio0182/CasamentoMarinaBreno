@@ -73,19 +73,27 @@ document.querySelector("#app").innerHTML = `
       <p class="section-eyebrow">Informações do evento</p>
       <h2>Reserve essa data</h2>
       <p>Contamos com vocês para tornar esse dia ainda mais especial! Após a cerimônia, iremos recepcioná-los no mesmo local.</p>
-      <div class="cards two-cols">
-        <article class="card">
-          <h3>Cerimônia</h3>
-          <p>16h00 - Igreja São José</p>
-          <p>Rua Exemplo, 123 - Cidade/UF</p>
-        </article>
-        <article class="card">
-          <h3>Recepção</h3>
-          <p>19h00 - Espaço Jardim</p>
-          <p>Av. Exemplo, 456 - Cidade/UF</p>
-        </article>
+      <div class="event-ceremony">
+        <h3>Cerimônia</h3>
+        <p class="event-date-time">19 de setembro de 2026 às 16:00</p>
+
+        <div class="event-map-wrap">
+          <iframe
+            title="Mapa da cerimônia"
+            src="https://www.google.com/maps?q=R.%20Ernesto%20Durigan%2C%20105%20-%20Santa%20Felicidade%2C%20Curitiba%20-%20PR%2C%2082020-390&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="event-route-label">Digite aqui o endereço de origem para traçar uma rota</p>
+        <form class="event-route-form" id="event-route-form">
+          <label class="sr-only" for="event-route-origin">Local de partida</label>
+          <input id="event-route-origin" name="origem" type="text" placeholder="Local de partida" required />
+          <button class="btn event-route-btn" type="submit">Traçar rota</button>
+        </form>
       </div>
-      <p class="event-note">Dress code: esporte fino em tons suaves</p>
     </section>
 
     <section class="section" id="dicas">
@@ -190,6 +198,8 @@ const form = document.getElementById("rsvp-form");
 const formOk = document.getElementById("form-ok");
 const hospedagemToggle = document.getElementById("hospedagem-toggle");
 const hospedagemDetails = document.getElementById("hospedagem-details");
+const routeForm = document.getElementById("event-route-form");
+const routeOriginInput = document.getElementById("event-route-origin");
 
 function renderCountdown() {
   const now = Date.now();
@@ -218,5 +228,22 @@ if (hospedagemToggle && hospedagemDetails) {
     const isExpanded = hospedagemToggle.getAttribute("aria-expanded") === "true";
     hospedagemToggle.setAttribute("aria-expanded", String(!isExpanded));
     hospedagemDetails.hidden = isExpanded;
+  });
+}
+
+if (routeForm && routeOriginInput) {
+  routeForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const origin = routeOriginInput.value.trim();
+    const destination = "R. Ernesto Durigan, 105 - Santa Felicidade, Curitiba - PR, 82020-390";
+
+    if (!origin) {
+      routeOriginInput.focus();
+      return;
+    }
+
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}&travelmode=driving`;
+    window.open(mapsUrl, "_blank", "noopener,noreferrer");
   });
 }
