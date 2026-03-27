@@ -297,11 +297,12 @@ h2 {
 }
 
 .tip-card {
-  background: rgba(255, 250, 242, 0.42);
-  border: 1px solid rgba(215, 203, 183, 0.4);
-  border-radius: 16px;
-  padding: 1.4rem 1.1rem 1.2rem;
-  color: #3f3b34;
+  background: rgba(255, 250, 242, 0.84);
+  border: 1px solid rgba(215, 203, 183, 0.58);
+  border-radius: 22px;
+  padding: 1.45rem;
+  box-shadow: 0 16px 32px rgba(47, 42, 38, 0.08);
+  color: #2e2924;
 }
 
 .tip-icon {
