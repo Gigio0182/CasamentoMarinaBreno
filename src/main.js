@@ -94,18 +94,40 @@ document.querySelector("#app").innerHTML = `
       <div class="tips-grid">
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 22C29 27 34 36 35 45" stroke="currentColor" stroke-width="1.9" />
-              <path d="M18 28C24 33 28 40 29 48" stroke="currentColor" stroke-width="1.7" />
-              <path d="M30 25L37 16L43 24L35 33Z" stroke="currentColor" stroke-width="1.7" />
-              <circle cx="50" cy="52" r="12" stroke="currentColor" stroke-width="2.2" />
-              <circle cx="50" cy="52" r="5.2" stroke="currentColor" stroke-width="1.7" />
-              <path d="M60 60L89 89" stroke="currentColor" stroke-width="2.2" />
-              <path d="M84 84L95 95" stroke="currentColor" stroke-width="2.2" />
-              <path d="M89 89L87 100" stroke="currentColor" stroke-width="2.2" />
-              <path d="M80 80L79 90" stroke="currentColor" stroke-width="2" />
-              <path d="M73 73L73 81" stroke="currentColor" stroke-width="1.9" />
-              <path d="M28 46C29 56 35 63 42 66" stroke="currentColor" stroke-width="1.6" />
+            <svg viewBox="0 0 160 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Suitcase body -->
+              <rect x="28" y="28" width="86" height="68" rx="5" stroke="currentColor" stroke-width="2.6"/>
+              <!-- Suitcase top handle -->
+              <path d="M55 28V20C55 17 57 15 60 15H82C85 15 87 17 87 20V28" stroke="currentColor" stroke-width="2.4"/>
+              <!-- Horizontal band top -->
+              <line x1="28" y1="52" x2="114" y2="52" stroke="currentColor" stroke-width="2"/>
+              <!-- Horizontal band bottom -->
+              <line x1="28" y1="68" x2="114" y2="68" stroke="currentColor" stroke-width="2"/>
+              <!-- Vertical center divider -->
+              <line x1="71" y1="28" x2="71" y2="96" stroke="currentColor" stroke-width="1.8"/>
+              <!-- Buckle left -->
+              <rect x="38" y="57" width="14" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <!-- Buckle right -->
+              <rect x="90" y="57" width="14" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <!-- Cart platform -->
+              <line x1="16" y1="96" x2="128" y2="96" stroke="currentColor" stroke-width="2.8"/>
+              <!-- Cart vertical pole -->
+              <line x1="128" y1="96" x2="128" y2="22" stroke="currentColor" stroke-width="2.6"/>
+              <!-- Cart handle bar -->
+              <line x1="118" y1="22" x2="138" y2="22" stroke="currentColor" stroke-width="2.6"/>
+              <!-- Small horizontal braces -->
+              <line x1="128" y1="50" x2="118" y2="50" stroke="currentColor" stroke-width="1.8"/>
+              <line x1="128" y1="70" x2="118" y2="70" stroke="currentColor" stroke-width="1.8"/>
+              <!-- Left wheel -->
+              <circle cx="38" cy="108" r="10" stroke="currentColor" stroke-width="2.4"/>
+              <circle cx="38" cy="108" r="3.5" stroke="currentColor" stroke-width="1.6"/>
+              <!-- Right wheel -->
+              <circle cx="100" cy="108" r="10" stroke="currentColor" stroke-width="2.4"/>
+              <circle cx="100" cy="108" r="3.5" stroke="currentColor" stroke-width="1.6"/>
+              <!-- Axle -->
+              <line x1="28" y1="108" x2="110" y2="108" stroke="currentColor" stroke-width="1.6"/>
+              <!-- Small front wheel -->
+              <circle cx="128" cy="106" r="7" stroke="currentColor" stroke-width="2.2"/>
             </svg>
           </div>
           <h3 class="tip-title">Hospedagem</h3>
