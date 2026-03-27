@@ -95,11 +95,17 @@ document.querySelector("#app").innerHTML = `
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="45" cy="45" r="18" stroke="currentColor" stroke-width="2.4" />
-              <path d="M58 58L90 90" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M90 90V103" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M81 86V96" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M73 78V87" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M22 22C29 27 34 36 35 45" stroke="currentColor" stroke-width="1.9" />
+              <path d="M18 28C24 33 28 40 29 48" stroke="currentColor" stroke-width="1.7" />
+              <path d="M30 25L37 16L43 24L35 33Z" stroke="currentColor" stroke-width="1.7" />
+              <circle cx="50" cy="52" r="12" stroke="currentColor" stroke-width="2.2" />
+              <circle cx="50" cy="52" r="5.2" stroke="currentColor" stroke-width="1.7" />
+              <path d="M60 60L89 89" stroke="currentColor" stroke-width="2.2" />
+              <path d="M84 84L95 95" stroke="currentColor" stroke-width="2.2" />
+              <path d="M89 89L87 100" stroke="currentColor" stroke-width="2.2" />
+              <path d="M80 80L79 90" stroke="currentColor" stroke-width="2" />
+              <path d="M73 73L73 81" stroke="currentColor" stroke-width="1.9" />
+              <path d="M28 46C29 56 35 63 42 66" stroke="currentColor" stroke-width="1.6" />
             </svg>
           </div>
           <h3 class="tip-title">Hospedagem</h3>
@@ -108,12 +114,19 @@ document.querySelector("#app").innerHTML = `
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 52H100" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M60 18V52" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M60 18C76 20 89 30 96 46" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M60 18C44 20 31 30 24 46" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M35 70H85" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M30 84H90" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M60 16V58" stroke="currentColor" stroke-width="2.2" />
+              <path d="M22 56C26 38 41 25 60 22C79 25 94 38 98 56" stroke="currentColor" stroke-width="2.2" />
+              <path d="M28 55C33 44 42 36 54 32" stroke="currentColor" stroke-width="1.6" />
+              <path d="M44 54C47 43 53 33 60 26" stroke="currentColor" stroke-width="1.6" />
+              <path d="M60 54C62 41 67 32 74 26" stroke="currentColor" stroke-width="1.6" />
+              <path d="M76 54C79 42 86 35 93 31" stroke="currentColor" stroke-width="1.6" />
+              <path d="M22 56H98" stroke="currentColor" stroke-width="2.2" />
+              <path d="M32 69H58" stroke="currentColor" stroke-width="2.2" />
+              <path d="M62 69H88" stroke="currentColor" stroke-width="2.2" />
+              <path d="M29 69L24 84H56L61 69" stroke="currentColor" stroke-width="1.9" />
+              <path d="M59 69L64 84H96L91 69" stroke="currentColor" stroke-width="1.9" />
+              <path d="M24 84H56" stroke="currentColor" stroke-width="2" />
+              <path d="M64 84H96" stroke="currentColor" stroke-width="2" />
             </svg>
           </div>
           <h3 class="tip-title">O que fazer</h3>
@@ -122,11 +135,17 @@ document.querySelector("#app").innerHTML = `
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="32" y="26" width="18" height="38" rx="4" stroke="currentColor" stroke-width="2.4"/>
-              <rect x="32" y="20" width="18" height="8" rx="2" stroke="currentColor" stroke-width="2.4"/>
-              <path d="M75 32L92 78" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M61 78L92 78" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <circle cx="44" cy="84" r="10" stroke="currentColor" stroke-width="2.4" />
+              <rect x="18" y="62" width="18" height="23" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 62L16 50C15 47 18 44 21 46L34 56" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="55" cy="37" r="13" stroke="currentColor" stroke-width="2" />
+              <path d="M47 31C52 26 60 26 64 31" stroke="currentColor" stroke-width="1.6" />
+              <path d="M44 52L67 52" stroke="currentColor" stroke-width="1.7" />
+              <path d="M80 28L97 73" stroke="currentColor" stroke-width="2.1" />
+              <path d="M70 73H101" stroke="currentColor" stroke-width="2.1" />
+              <path d="M72 74C76 78 83 79 87 74" stroke="currentColor" stroke-width="1.6" />
+              <path d="M40 75L53 63L66 75" stroke="currentColor" stroke-width="2" />
+              <path d="M53 63V90" stroke="currentColor" stroke-width="2" />
+              <path d="M40 90H66" stroke="currentColor" stroke-width="2" />
             </svg>
           </div>
           <h3 class="tip-title">Cabeleireiro e Maquiador</h3>
@@ -135,14 +154,17 @@ document.querySelector("#app").innerHTML = `
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
             <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="54" cy="60" r="22" stroke="currentColor" stroke-width="2.4" />
-              <circle cx="54" cy="60" r="10" stroke="currentColor" stroke-width="2.4" />
-              <path d="M20 40V83" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M16 48H24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M16 58H24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M16 68H24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M90 36V86" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
-              <path d="M84 36H96" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <ellipse cx="55" cy="67" rx="26" ry="20" stroke="currentColor" stroke-width="2.1" />
+              <ellipse cx="55" cy="67" rx="12" ry="8" stroke="currentColor" stroke-width="1.7" />
+              <path d="M29 67H14" stroke="currentColor" stroke-width="2" />
+              <path d="M14 52V84" stroke="currentColor" stroke-width="2" />
+              <path d="M11 58H17" stroke="currentColor" stroke-width="1.7" />
+              <path d="M11 66H17" stroke="currentColor" stroke-width="1.7" />
+              <path d="M11 74H17" stroke="currentColor" stroke-width="1.7" />
+              <path d="M84 50L90 41C93 37 98 37 101 41L103 44" stroke="currentColor" stroke-width="1.9" />
+              <path d="M90 52V84" stroke="currentColor" stroke-width="2" />
+              <path d="M84 84H96" stroke="currentColor" stroke-width="2" />
+              <path d="M43 45C47 40 53 39 57 43" stroke="currentColor" stroke-width="1.5" />
             </svg>
           </div>
           <h3 class="tip-title">Bares e Restaurantes</h3>
