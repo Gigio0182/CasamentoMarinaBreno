@@ -94,7 +94,7 @@ document.querySelector("#app").innerHTML = `
       <div class="tips-grid">
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos SVG*</p>
+            <img src="/icons/hospedagem.svg" alt="Icone de hospedagem" loading="lazy" />
           </div>
           <button class="tip-title tip-button" id="hospedagem-toggle" type="button" aria-expanded="false" aria-controls="hospedagem-details">
             Hospedagem
@@ -126,14 +126,14 @@ document.querySelector("#app").innerHTML = `
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos SVG*</p>
+            <img src="/icons/o-que-fazer.svg" alt="Icone de o que fazer" loading="lazy" />
           </div>
           <h3 class="tip-title">O que fazer</h3>
         </article>
 
         <article class="tip-card">
           <div class="tip-icon" aria-hidden="true">
-            <p class="tip-placeholder">*incluir desenhos SVG*</p>
+            <img src="/icons/cabeleireiro-maquiador.svg" alt="Icone de cabeleireiro e maquiador" loading="lazy" />
           </div>
           <h3 class="tip-title">Cabeleireiro e Maquiador</h3>
         </article>
