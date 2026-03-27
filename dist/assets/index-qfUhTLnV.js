@@ -1,26 +1,4 @@
-import "./style.css";
-
-const weddingDate = new Date("2026-10-12T16:00:00");
-
-function formatCountdown(diff) {
-  if (diff <= 0) {
-    return { dias: "00", horas: "00", minutos: "00", segundos: "00" };
-  }
-
-  const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutos = Math.floor((diff / (1000 * 60)) % 60);
-  const segundos = Math.floor((diff / 1000) % 60);
-
-  return {
-    dias: String(dias).padStart(2, "0"),
-    horas: String(horas).padStart(2, "0"),
-    minutos: String(minutos).padStart(2, "0"),
-    segundos: String(segundos).padStart(2, "0"),
-  };
-}
-
-document.querySelector("#app").innerHTML = `
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const n of o.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&r(n)}).observe(document,{childList:!0,subtree:!0});function a(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(e){if(e.ep)return;e.ep=!0;const o=a(e);fetch(e.href,o)}})();const d=new Date("2026-10-12T16:00:00");function p(s){if(s<=0)return{dias:"00",horas:"00",minutos:"00",segundos:"00"};const t=Math.floor(s/(1e3*60*60*24)),a=Math.floor(s/(1e3*60*60)%24),r=Math.floor(s/(1e3*60)%60),e=Math.floor(s/1e3%60);return{dias:String(t).padStart(2,"0"),horas:String(a).padStart(2,"0"),minutos:String(r).padStart(2,"0"),segundos:String(e).padStart(2,"0")}}document.querySelector("#app").innerHTML=`
   <div class="page-bg"></div>
   <a class="floating-rsvp" href="#rsvp">Confirmar presença</a>
   <header class="hero" id="home">
@@ -127,30 +105,9 @@ document.querySelector("#app").innerHTML = `
     <a class="back-top" href="#home">Voltar ao topo</a>
     <p>Com amor, Marina e Breno</p>
   </footer>
-`;
-
-const countdownGrid = document.getElementById("countdown-grid");
-const form = document.getElementById("rsvp-form");
-const formOk = document.getElementById("form-ok");
-
-function renderCountdown() {
-  const now = Date.now();
-  const diff = weddingDate.getTime() - now;
-  const countdown = formatCountdown(diff);
-
-  countdownGrid.innerHTML = `
-    <div><strong>${countdown.dias}</strong><span>Dias</span></div>
-    <div><strong>${countdown.horas}</strong><span>Horas</span></div>
-    <div><strong>${countdown.minutos}</strong><span>Minutos</span></div>
-    <div><strong>${countdown.segundos}</strong><span>Segundos</span></div>
-  `;
-}
-
-renderCountdown();
-setInterval(renderCountdown, 1000);
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  formOk.hidden = false;
-  form.reset();
-});
+`;const l=document.getElementById("countdown-grid"),i=document.getElementById("rsvp-form"),m=document.getElementById("form-ok");function c(){const s=Date.now(),t=d.getTime()-s,a=p(t);l.innerHTML=`
+    <div><strong>${a.dias}</strong><span>Dias</span></div>
+    <div><strong>${a.horas}</strong><span>Horas</span></div>
+    <div><strong>${a.minutos}</strong><span>Minutos</span></div>
+    <div><strong>${a.segundos}</strong><span>Segundos</span></div>
+  `}c();setInterval(c,1e3);i.addEventListener("submit",s=>{s.preventDefault(),m.hidden=!1,i.reset()});
