@@ -72,6 +72,7 @@ document.querySelector("#app").innerHTML = `
     <section class="section" id="evento">
       <p class="section-eyebrow">Informações do evento</p>
       <h2>Reserve essa data</h2>
+      <p>Contamos com vocês para tornar esse dia ainda mais especial! Após a cerimônia, iremos recepcioná-los no mesmo local.</p>
       <div class="cards two-cols">
         <article class="card">
           <h3>Cerimônia</h3>
