@@ -127,15 +127,29 @@ body::after {
 }
 
 .hero-content {
-  width: min(92vw, 460px);
-  margin: 4.5rem auto 0;
+  width: min(94vw, 980px);
+  margin: 3rem auto 0;
   text-align: center;
   background: transparent;
   border: none;
   border-radius: 0;
   backdrop-filter: none;
-  padding: 1.2rem 0.6rem;
+  padding: 1.2rem 0.4rem 2rem;
   box-shadow: none;
+}
+
+.home-story {
+  margin-top: 1.9rem;
+}
+
+.home-story > p {
+  max-width: 860px;
+  margin: 0.8rem auto 0;
+  line-height: 1.75;
+}
+
+.mini-story-grid {
+  margin-top: 1.4rem;
 }
 
 .eyebrow {
@@ -480,8 +494,8 @@ h2 {
 
   .hero-content {
     margin: 2.6rem auto 0;
-    background: rgba(255, 250, 242, 0.42);
-    border: 1px solid rgba(173, 151, 120, 0.22);
+    background: rgba(255, 250, 242, 0.3);
+    border: 1px solid rgba(173, 151, 120, 0.2);
     border-radius: 16px;
     padding: 1.4rem 1rem;
   }

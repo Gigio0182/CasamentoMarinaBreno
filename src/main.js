@@ -1,6 +1,6 @@
 import "./style.css";
 
-const weddingDate = new Date("2026-10-12T16:00:00");
+const weddingDate = new Date("2026-09-19T16:00:00");
 
 function formatCountdown(diff) {
   if (diff <= 0) {
@@ -26,7 +26,6 @@ document.querySelector("#app").innerHTML = `
   <header class="hero" id="home">
     <nav class="nav">
       <a href="#home">Home</a>
-      <a href="#historia">História</a>
       <a href="#evento">Evento</a>
       <a href="#dicas">Dicas</a>
       <a href="#rsvp">RSVP</a>
@@ -34,10 +33,32 @@ document.querySelector("#app").innerHTML = `
     </nav>
     <div class="hero-content">
       <h1>Marina & Breno</h1>
-      <p class="hero-date">12 / 10 / 2026</p>
+      <p class="hero-date">19 / 09 / 2026</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#rsvp">Confirmar Presença</a>
         <a class="btn btn-outline" href="#evento">Ver Local</a>
+      </div>
+
+      <div class="home-story">
+        <p class="section-eyebrow">Sejam bem-vindos ao nosso site</p>
+        <h2>Estamos vivendo o capítulo mais especial da nossa história.</h2>
+        <p>Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.</p>
+        <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas nos enche de alegria em tê-los ao nosso lado. Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e corpos para sempre, <strong>o dia do nosso casamento</strong>.</p>
+
+        <div class="cards mini-story-grid">
+          <article class="card">
+            <h3>O começo</h3>
+            <p>Tudo começou de um jeito simples, mas com uma conexão que parecia destino.</p>
+          </article>
+          <article class="card">
+            <h3>O pedido</h3>
+            <p>Entre risos, planos e muito amor, chegou o dia do sim mais importante da nossa história.</p>
+          </article>
+          <article class="card">
+            <h3>O grande dia</h3>
+            <p>Agora queremos celebrar esse novo capítulo com quem sempre fez parte da nossa caminhada.</p>
+          </article>
+        </div>
       </div>
     </div>
   </header>
@@ -46,28 +67,6 @@ document.querySelector("#app").innerHTML = `
     <section class="countdown section" aria-label="Contagem regressiva">
       <p class="section-eyebrow">Contagem regressiva para o grande dia</p>
       <div id="countdown-grid" class="countdown-grid"></div>
-    </section>
-
-    <section class="section welcome" id="historia">
-      <p class="section-eyebrow">Sejam bem-vindos ao nosso site</p>
-      <h2>Estamos vivendo o capítulo mais especial da nossa história.</h2>
-      <p>Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.</p>
-      <p>A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia mais esperado de nossas vidas nos enche de alegria em tê-los ao nosso lado. Vamos juntos nesse grande sonho, o dia em que uniremos nossas almas e corpos para sempre, <strong>o dia do nosso casamento</strong>.</p>
-    </section>
-
-    <section class="section story-grid">
-      <article class="card">
-        <h3>O começo</h3>
-        <p>Tudo começou de um jeito simples, mas com uma conexão que parecia destino.</p>
-      </article>
-      <article class="card">
-        <h3>O pedido</h3>
-        <p>Entre risos, planos e muito amor, chegou o dia do sim mais importante da nossa história.</p>
-      </article>
-      <article class="card">
-        <h3>O grande dia</h3>
-        <p>Agora queremos celebrar esse novo capítulo com quem sempre fez parte da nossa caminhada.</p>
-      </article>
     </section>
 
     <section class="section" id="evento">
