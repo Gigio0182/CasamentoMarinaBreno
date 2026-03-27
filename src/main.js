@@ -140,67 +140,149 @@ document.querySelector("#app").innerHTML = `
             Bares e Restaurantes
           </button>
           <div class="hotel-list" id="restaurantes-details" hidden>
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/chezmargotbistrot/" target="_blank" rel="noreferrer">Chez Margot</a>
-              <p>Dona Alice Tibiriça, 286 - Bigorrilho</p>
-              <a class="hotel-link" href="https://www.instagram.com/chezmargotbistrot/" target="_blank" rel="noreferrer">https://www.instagram.com/chezmargotbistrot/</a>
-            </article>
+            <section class="restaurant-category" aria-label="Culinária Italiana">
+              <h4 class="restaurant-category-title">Italiana</h4>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/barolocuritiba/" target="_blank" rel="noreferrer">Barolo</a>
+                <p>Av. Silva Jardim, 2487 - Água Verde</p>
+                <a class="hotel-link" href="https://www.instagram.com/barolocuritiba/" target="_blank" rel="noreferrer">https://www.instagram.com/barolocuritiba/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/lambrutta/" target="_blank" rel="noreferrer">Lambrutta Cucina</a>
+                <p>Alameda Prudente de Moraes, 842 - Mercês</p>
+                <a class="hotel-link" href="https://www.instagram.com/lambrutta/" target="_blank" rel="noreferrer">https://www.instagram.com/lambrutta/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/pizzariacarolla/" target="_blank" rel="noreferrer">Pizzaria Carolla</a>
+                <p>Alameda Dom Pedro II, 24 - Batel</p>
+                <a class="hotel-link" href="https://www.instagram.com/pizzariacarolla/" target="_blank" rel="noreferrer">https://www.instagram.com/pizzariacarolla/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/pizzariabaggio/?hl=pt" target="_blank" rel="noreferrer">Pizzaria Baggio</a>
+                <p>Recomendamos este restaurante pensando no seu conforto e comodidade.</p>
+                <a class="hotel-link" href="https://www.instagram.com/pizzariabaggio/?hl=pt" target="_blank" rel="noreferrer">https://www.instagram.com/pizzariabaggio/?hl=pt</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/merceariabresser/" target="_blank" rel="noreferrer">Mercearia Bresser</a>
+                <p>Av. Sete de Setembro, 5831</p>
+                <a class="hotel-link" href="https://www.instagram.com/merceariabresser/" target="_blank" rel="noreferrer">https://www.instagram.com/merceariabresser/</a>
+              </article>
+            </section>
 
             <div class="hotel-divider" aria-hidden="true"></div>
 
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/zefydiner/" target="_blank" rel="noreferrer">Zefy</a>
-              <p>Rua Alferes Ângelo Sampaio, 1816 - Água Verde</p>
-              <a class="hotel-link" href="https://www.instagram.com/zefydiner/" target="_blank" rel="noreferrer">https://www.instagram.com/zefydiner/</a>
-            </article>
+            <section class="restaurant-category" aria-label="Culinária Japonesa">
+              <h4 class="restaurant-category-title">Japonesa</h4>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/kibo.japanese/" target="_blank" rel="noreferrer">Kibô</a>
+                <p>Rua Cândido Lopes, 102 - Centro</p>
+                <a class="hotel-link" href="https://www.instagram.com/kibo.japanese/" target="_blank" rel="noreferrer">https://www.instagram.com/kibo.japanese/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/aizu_restaurante/" target="_blank" rel="noreferrer">Aizu</a>
+                <p>Alameda Dr. Carlos de Carvalho, 2420 - Bigorrilho</p>
+                <a class="hotel-link" href="https://www.instagram.com/aizu_restaurante/" target="_blank" rel="noreferrer">https://www.instagram.com/aizu_restaurante/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/fukuokarestaurante/?hl=pt" target="_blank" rel="noreferrer">Fukuoka</a>
+                <p>Av. Pres. Getúlio Vargas, 3309 - Vila Izabel</p>
+                <a class="hotel-link" href="https://www.instagram.com/fukuokarestaurante/?hl=pt" target="_blank" rel="noreferrer">https://www.instagram.com/fukuokarestaurante/?hl=pt</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/restaurantekan/" target="_blank" rel="noreferrer">Kan</a>
+                <p>Av. Pres. Getúlio Vargas, 3121 - Água Verde</p>
+                <a class="hotel-link" href="https://www.instagram.com/restaurantekan/" target="_blank" rel="noreferrer">https://www.instagram.com/restaurantekan/</a>
+              </article>
+            </section>
 
             <div class="hotel-divider" aria-hidden="true"></div>
 
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/badidasete/" target="_blank" rel="noreferrer">Badida</a>
-              <p>Av. Sete de Setembro, 6045 - Seminário</p>
-              <a class="hotel-link" href="https://www.instagram.com/badidasete/" target="_blank" rel="noreferrer">https://www.instagram.com/badidasete/</a>
-            </article>
+            <section class="restaurant-category" aria-label="Culinária Suíça">
+              <h4 class="restaurant-category-title">Suíça</h4>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/chezmargotbistrot/" target="_blank" rel="noreferrer">Chez Margot</a>
+                <p>Dona Alice Tibiriça, 286 - Bigorrilho</p>
+                <a class="hotel-link" href="https://www.instagram.com/chezmargotbistrot/" target="_blank" rel="noreferrer">https://www.instagram.com/chezmargotbistrot/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/chaletsuisse/" target="_blank" rel="noreferrer">Chalet Suisse</a>
+                <p>Rua Francisco Dallalibera, 1428 - Santa Felicidade</p>
+                <a class="hotel-link" href="https://www.instagram.com/chaletsuisse/" target="_blank" rel="noreferrer">https://www.instagram.com/chaletsuisse/</a>
+              </article>
+            </section>
 
             <div class="hotel-divider" aria-hidden="true"></div>
 
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/lastablasbr/?hl=pt" target="_blank" rel="noreferrer">Las Tablas</a>
-              <p>Rua Gutemberg, 23 - Batel</p>
-              <a class="hotel-link" href="https://www.instagram.com/lastablasbr/?hl=pt" target="_blank" rel="noreferrer">https://www.instagram.com/lastablasbr/?hl=pt</a>
-            </article>
+            <section class="restaurant-category" aria-label="Culinária Brasileira">
+              <h4 class="restaurant-category-title">Brasileira</h4>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/badidasete/" target="_blank" rel="noreferrer">Badida</a>
+                <p>Av. Sete de Setembro, 6045 - Seminário</p>
+                <a class="hotel-link" href="https://www.instagram.com/badidasete/" target="_blank" rel="noreferrer">https://www.instagram.com/badidasete/</a>
+              </article>
+            </section>
 
             <div class="hotel-divider" aria-hidden="true"></div>
 
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/chinchuparrilla/" target="_blank" rel="noreferrer">Chinchu</a>
-              <p>Rua Saldanha Marinho, 1144 - Centro</p>
-              <a class="hotel-link" href="https://www.instagram.com/chinchuparrilla/" target="_blank" rel="noreferrer">https://www.instagram.com/chinchuparrilla/</a>
-            </article>
+            <section class="restaurant-category" aria-label="Culinária Americana">
+              <h4 class="restaurant-category-title">Americana</h4>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/zefydiner/" target="_blank" rel="noreferrer">Zefy</a>
+                <p>Rua Alferes Ângelo Sampaio, 1816 - Água Verde</p>
+                <a class="hotel-link" href="https://www.instagram.com/zefydiner/" target="_blank" rel="noreferrer">https://www.instagram.com/zefydiner/</a>
+              </article>
+
+              <div class="hotel-divider" aria-hidden="true"></div>
+
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/_wolfsbr/" target="_blank" rel="noreferrer">Wolfs</a>
+                <p>Alameda Dr. Carlos de Carvalho, 695 - Centro</p>
+                <a class="hotel-link" href="https://www.instagram.com/_wolfsbr/" target="_blank" rel="noreferrer">https://www.instagram.com/_wolfsbr/</a>
+              </article>
+            </section>
 
             <div class="hotel-divider" aria-hidden="true"></div>
 
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/barolocuritiba/" target="_blank" rel="noreferrer">Barolo</a>
-              <p>Av. Silva Jardim, 2487 - Água Verde</p>
-              <a class="hotel-link" href="https://www.instagram.com/barolocuritiba/" target="_blank" rel="noreferrer">https://www.instagram.com/barolocuritiba/</a>
-            </article>
+            <section class="restaurant-category" aria-label="Culinária Argentina">
+              <h4 class="restaurant-category-title">Argentina</h4>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/lastablasbr/?hl=pt" target="_blank" rel="noreferrer">Las Tablas</a>
+                <p>Rua Gutemberg, 23 - Batel</p>
+                <a class="hotel-link" href="https://www.instagram.com/lastablasbr/?hl=pt" target="_blank" rel="noreferrer">https://www.instagram.com/lastablasbr/?hl=pt</a>
+              </article>
 
-            <div class="hotel-divider" aria-hidden="true"></div>
+              <div class="hotel-divider" aria-hidden="true"></div>
 
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/lambrutta/" target="_blank" rel="noreferrer">Lambrutta Cucina</a>
-              <p>Alameda Prudente de Moraes, 842 - Mercês</p>
-              <a class="hotel-link" href="https://www.instagram.com/lambrutta/" target="_blank" rel="noreferrer">https://www.instagram.com/lambrutta/</a>
-            </article>
-
-            <div class="hotel-divider" aria-hidden="true"></div>
-
-            <article class="hotel-item">
-              <a class="hotel-name" href="https://www.instagram.com/aizu_restaurante/" target="_blank" rel="noreferrer">Aizu</a>
-              <p>Alameda Dr. Carlos de Carvalho, 2420 - Bigorrilho</p>
-              <a class="hotel-link" href="https://www.instagram.com/aizu_restaurante/" target="_blank" rel="noreferrer">https://www.instagram.com/aizu_restaurante/</a>
-            </article>
+              <article class="hotel-item">
+                <a class="hotel-name" href="https://www.instagram.com/chinchuparrilla/" target="_blank" rel="noreferrer">Chinchu</a>
+                <p>Rua Saldanha Marinho, 1144 - Centro</p>
+                <a class="hotel-link" href="https://www.instagram.com/chinchuparrilla/" target="_blank" rel="noreferrer">https://www.instagram.com/chinchuparrilla/</a>
+              </article>
+            </section>
           </div>
         </article>
       </div>
