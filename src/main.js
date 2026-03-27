@@ -136,7 +136,72 @@ document.querySelector("#app").innerHTML = `
           <div class="tip-icon" aria-hidden="true">
             <img src="/icons/bares-restaurantes.svg" alt="Icone de bares e restaurantes" loading="lazy" />
           </div>
-          <h3 class="tip-title">Bares e Restaurantes</h3>
+          <button class="tip-title tip-button" id="restaurantes-toggle" type="button" aria-expanded="false" aria-controls="restaurantes-details">
+            Bares e Restaurantes
+          </button>
+          <div class="hotel-list" id="restaurantes-details" hidden>
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/chezmargotbistrot/" target="_blank" rel="noreferrer">Chez Margot</a>
+              <p>Dona Alice Tibiriça, 286 - Bigorrilho</p>
+              <a class="hotel-link" href="https://www.instagram.com/chezmargotbistrot/" target="_blank" rel="noreferrer">https://www.instagram.com/chezmargotbistrot/</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/zefydiner/" target="_blank" rel="noreferrer">Zefy</a>
+              <p>Rua Alferes Ângelo Sampaio, 1816 - Água Verde</p>
+              <a class="hotel-link" href="https://www.instagram.com/zefydiner/" target="_blank" rel="noreferrer">https://www.instagram.com/zefydiner/</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/badidasete/" target="_blank" rel="noreferrer">Badida</a>
+              <p>Av. Sete de Setembro, 6045 - Seminário</p>
+              <a class="hotel-link" href="https://www.instagram.com/badidasete/" target="_blank" rel="noreferrer">https://www.instagram.com/badidasete/</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/lastablasbr/?hl=pt" target="_blank" rel="noreferrer">Las Tablas</a>
+              <p>Rua Gutemberg, 23 - Batel</p>
+              <a class="hotel-link" href="https://www.instagram.com/lastablasbr/?hl=pt" target="_blank" rel="noreferrer">https://www.instagram.com/lastablasbr/?hl=pt</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/chinchuparrilla/" target="_blank" rel="noreferrer">Chinchu</a>
+              <p>Rua Saldanha Marinho, 1144 - Centro</p>
+              <a class="hotel-link" href="https://www.instagram.com/chinchuparrilla/" target="_blank" rel="noreferrer">https://www.instagram.com/chinchuparrilla/</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/barolocuritiba/" target="_blank" rel="noreferrer">Barolo</a>
+              <p>Av. Silva Jardim, 2487 - Água Verde</p>
+              <a class="hotel-link" href="https://www.instagram.com/barolocuritiba/" target="_blank" rel="noreferrer">https://www.instagram.com/barolocuritiba/</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/lambrutta/" target="_blank" rel="noreferrer">Lambrutta Cucina</a>
+              <p>Alameda Prudente de Moraes, 842 - Mercês</p>
+              <a class="hotel-link" href="https://www.instagram.com/lambrutta/" target="_blank" rel="noreferrer">https://www.instagram.com/lambrutta/</a>
+            </article>
+
+            <div class="hotel-divider" aria-hidden="true"></div>
+
+            <article class="hotel-item">
+              <a class="hotel-name" href="https://www.instagram.com/aizu_restaurante/" target="_blank" rel="noreferrer">Aizu</a>
+              <p>Alameda Dr. Carlos de Carvalho, 2420 - Bigorrilho</p>
+              <a class="hotel-link" href="https://www.instagram.com/aizu_restaurante/" target="_blank" rel="noreferrer">https://www.instagram.com/aizu_restaurante/</a>
+            </article>
+          </div>
         </article>
       </div>
     </section>
@@ -183,6 +248,8 @@ const form = document.getElementById("rsvp-form");
 const formOk = document.getElementById("form-ok");
 const hospedagemToggle = document.getElementById("hospedagem-toggle");
 const hospedagemDetails = document.getElementById("hospedagem-details");
+const restaurantesToggle = document.getElementById("restaurantes-toggle");
+const restaurantesDetails = document.getElementById("restaurantes-details");
 const routeForm = document.getElementById("event-route-form");
 const routeOriginInput = document.getElementById("event-route-origin");
 
@@ -213,6 +280,14 @@ if (hospedagemToggle && hospedagemDetails) {
     const isExpanded = hospedagemToggle.getAttribute("aria-expanded") === "true";
     hospedagemToggle.setAttribute("aria-expanded", String(!isExpanded));
     hospedagemDetails.hidden = isExpanded;
+  });
+}
+
+if (restaurantesToggle && restaurantesDetails) {
+  restaurantesToggle.addEventListener("click", () => {
+    const isExpanded = restaurantesToggle.getAttribute("aria-expanded") === "true";
+    restaurantesToggle.setAttribute("aria-expanded", String(!isExpanded));
+    restaurantesDetails.hidden = isExpanded;
   });
 }
 
