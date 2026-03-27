@@ -28,6 +28,7 @@ document.querySelector("#app").innerHTML = `
       <a href="#home">Home</a>
       <a href="#historia">História</a>
       <a href="#evento">Evento</a>
+      <a href="#dicas">Dicas</a>
       <a href="#rsvp">RSVP</a>
       <a href="#presentes">Presentes</a>
     </nav>
@@ -85,6 +86,68 @@ document.querySelector("#app").innerHTML = `
         </article>
       </div>
       <p class="event-note">Dress code: esporte fino em tons suaves</p>
+    </section>
+
+    <section class="section" id="dicas">
+      <p class="section-eyebrow">Dicas</p>
+      <h2>Para aproveitar melhor a viagem</h2>
+      <div class="tips-grid">
+        <article class="tip-card">
+          <div class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="45" cy="45" r="18" stroke="currentColor" stroke-width="2.4" />
+              <path d="M58 58L90 90" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M90 90V103" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M81 86V96" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M73 78V87" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="tip-title">Hospedagem</h3>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 52H100" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M60 18V52" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M60 18C76 20 89 30 96 46" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M60 18C44 20 31 30 24 46" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M35 70H85" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M30 84H90" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="tip-title">O que fazer</h3>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="32" y="26" width="18" height="38" rx="4" stroke="currentColor" stroke-width="2.4"/>
+              <rect x="32" y="20" width="18" height="8" rx="2" stroke="currentColor" stroke-width="2.4"/>
+              <path d="M75 32L92 78" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M61 78L92 78" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="44" cy="84" r="10" stroke="currentColor" stroke-width="2.4" />
+            </svg>
+          </div>
+          <h3 class="tip-title">Cabeleireiro e Maquiador</h3>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="54" cy="60" r="22" stroke="currentColor" stroke-width="2.4" />
+              <circle cx="54" cy="60" r="10" stroke="currentColor" stroke-width="2.4" />
+              <path d="M20 40V83" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M16 48H24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M16 58H24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M16 68H24" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M90 36V86" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M84 36H96" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="tip-title">Bares e Restaurantes</h3>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="rsvp">
